@@ -18,3 +18,23 @@ sessionStorage.setItem('name', 'Mark')
 document.cookie = 'name=Elena; expires=' + new Date(2100, 0, 1).toUTCString()
 
 document.cookie = 'lastName=Oprea; expires=' + new Date(2100, 0, 1).toUTCString()
+
+
+
+//Storing Objects in Local Storage
+
+const object ={
+    name:'Elena',
+    age: '30'
+}
+
+//Convert an object to a Json string
+const stringObject = JSON.stringify(object)
+console.log(stringObject);
+
+//Convert a Json string to an object
+
+const backtoString = JSON.parse(stringObject)
+console.log(backtoString);
+
+
