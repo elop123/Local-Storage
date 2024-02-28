@@ -32,6 +32,9 @@ const object ={
 const stringObject = JSON.stringify(object)
 console.log(stringObject);
 
+localStorage.setItem('object', stringObject)
+//console.log(localStorage.getItem('object'));
+
 //Convert a Json string to an object
 
 const backtoString = JSON.parse(stringObject)
